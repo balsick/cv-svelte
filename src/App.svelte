@@ -105,13 +105,13 @@
         <div class="no-print col-auto sm:hidden block pt-2 flex ">
           <a href={pdf} bind:this={downloadRef} download class="grow-0 flex rounded bg-white text-primary p-1 uppercase font-bold text-decoration-none"><Fa icon={faDownload} />&nbsp;Download</a>
         </div>
-        <div class="w-full mx-auto justify-content-center"><img alt="Picture of me" src="/me.png" class="rounded-full" /></div>
+        <div class="w-full mx-auto justify-content-center"><img alt="Picture of me" src="me.png" class="rounded-full" /></div>
         <Divider />
         <CVS icon={faPersonRays} title="Personal Information" data={personalInfo} ></CVS>
         <CVS icon={faMicrochip} title="Main technologies">
           <div class="mx-0 mt-0 px-0 columns-4">
             {#each skills as s, i (s + i)}
-            <img src={`/skills/icon/${s}.svg`} class="m-auto h-9 my-2" alt={s}/>
+            <img src={`skills/icon/${s}.svg`} class="m-auto h-9 my-2" alt={s}/>
             {/each}
           </div>
         </CVS>
